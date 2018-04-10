@@ -399,6 +399,7 @@ Handle<Value> ODBC::GetColumnValue( SQLHSTMT hStmt, Column column,
         }
       }
       break;
+    case INGRESDATE :
     case SQL_DATETIME :
     case SQL_TIMESTAMP : {
       //I am not sure if this is locale-safe or cross database safe, but it 
